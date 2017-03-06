@@ -20,14 +20,47 @@ body{
 	color: white;
 	font-size: 11px;
 }
+#inicio{
+	background-image: url("../images/back_secc1.png");
+	background-repeat: no-repeat;
+	background-position: top center;
+	height: auto;
+	width: 100%;
+}
+#arte_inicio{
+}
 #header_elebegraph{
 	height: 91px;
+}
+.img_centro{
+	display: block;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+}
+#inico_arte{
+	width: 641px;
+	margin-top: 30px;
+}
+#footer_elebe{
+	background-image: url("../images/img_footer.png");
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	height: 229px;
 }
 /*cambios medida lg*/
 @media (max-width: 1200px) {}
 /*cambios medida md*/
 @media (max-width: 992px) {}
 /*cambios medida sm*/
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+#inico_arte{
+	width: 341px;
+}
+}
 /*cambios medida xs*/
-@media screen and (max-width: 480px) {}
+@media screen and (max-width: 480px) {
+#inico_arte{
+	width: 241px;
+}
+}
