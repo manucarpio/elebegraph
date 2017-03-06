@@ -1,0 +1,33 @@
+/*tipografia sitio*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i');
+
+
+body{
+	display: block;
+	position: relative;
+	overflow-x: hidden;
+}
+.texto_sombra{
+	text-shadow: 0 1px 4px rgba(0,0,0,.9);
+}
+.al_cien{
+	width: 100%;
+	display: block;
+	position: relative;
+}
+.open_font{
+	font-family: 'Open Sans';
+	color: white;
+	font-size: 11px;
+}
+#header_elebegraph{
+	height: 91px;
+}
+/*cambios medida lg*/
+@media (max-width: 1200px) {}
+/*cambios medida md*/
+@media (max-width: 992px) {}
+/*cambios medida sm*/
+@media (max-width: 768px) {}
+/*cambios medida xs*/
+@media screen and (max-width: 480px) {}
