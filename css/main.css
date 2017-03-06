@@ -1,5 +1,5 @@
 /*tipografia sitio*/
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i,800');
 
 
 body{
@@ -20,14 +20,24 @@ body{
 	color: white;
 	font-size: 11px;
 }
-#inicio{
-	background-image: url("../images/back_secc1.png");
+#scroll {
+    color: black;
+    font-family: "Open Sans";
+    margin-top: -30px;
+}
+#background_wrapper{
+	background-image: url("../images/back_entero.jpg");
 	background-repeat: no-repeat;
 	background-position: top center;
-	height: auto;
 	width: 100%;
+	height: 4767px;
 }
 #arte_inicio{
+	display: block;
+	position: relative;
+}
+#inicio_pleca{
+	height: 89px;
 }
 #header_elebegraph{
 	height: 91px;
@@ -38,29 +48,162 @@ body{
 	margin-right: auto;
 	margin-left: auto;
 }
-#inico_arte{
-	width: 641px;
-	margin-top: 30px;
+#inico_arte {
+    margin-top: 90px;
+    width: 641px;
 }
-#footer_elebe{
-	background-image: url("../images/img_footer.png");
-	background-repeat: no-repeat;
-	background-position: bottom center;
-	height: 229px;
+#footer_elebe {
+    background-image: url("../images/img_footer.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 229px;
+    margin-top: -40px;
 }
+#texto_footer{
+	color: #fff200;
+	font-family: 'Open Sans';
+	font-size: 14px;
+	text-align: center;
+	margin-top: 100px;
+}
+.verde_secc{
+	color: #295c00;
+	font-family: 'Open Sans';
+	font-size: 24px;
+}
+#bien_tit{
+	color: white;
+	font-family: 'Open Sans';
+	font-size: 87px;
+	font-weight: 800;
+	text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+}
+#potenciar{
+	font-weight: 800;
+}
+.parr_negro{
+	color: black;
+	font-family: "Open Sans";
+	font-weight: 700;
+	font-size: 20px;
+}
+.parrafo_sub{
+	color: #484848;
+	font-family: "Open Sans";
+	font-size: 20px;
+}
+.stroger{
+	font-weight: 600;
+}
+#salida_sec3{
+	color: #295c00;
+	font-family: "Open Sans";
+	font-weight: 700;
+	font-style: italic;
+}
+.pleca_azul{
+	width: 100%;
+	display: block;
+	position: relative;
+	height: 5px;
+	background-color: #02feda;
+}
+#cont_secc2{
+	margin-top: 120px;
+}
+#cont_secc3 {
+    margin-top: 291px;
+}
+#web_titulo{
+	color: white;
+	font-family: "Open Sans";
+	font-weight: 700;
+	font-size: 40px;
+}
+#texto_azul{
+	color: #033571;
+	font-family: "Open Sans";
+	font-weight: 700;
+	font-size: 19px;
+}
+#parr_secc3{
+	color: white;
+	font-family: "Open Sans";
+	font-size: 16px;
+}
+.asesoramos{
+	color: white;
+	font-family: "Open Sans";
+	font-weight: 800;
+	font-size: 30px;
+}
+#sec3_gray{
+	color: #acafb2;
+}
+#consultores{
+	color: #74777b;
+}
+.purple_parr{
+	font-family: "Open Sans";
+	color: #390069;
+	font-size: 20px;
+}
+.purple_strong{
+	font-weight: 800;
+}
+#gestiona{
+	color: #9921ff;
+	font-family: "Open Sans";
+	font-size: 39px;
+	font-weight: 800;
+}
+.gray_parr{
+	color: #717171;
+	font-family: "Open Sans";
+	font-size: 15px;
+}
+.strong_gray{
+	font-weight: 800;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*cambios medida lg*/
 @media (max-width: 1200px) {}
+
+
 /*cambios medida md*/
 @media (max-width: 992px) {}
+
+
+
 /*cambios medida sm*/
 @media (max-width: 768px) {
 #inico_arte{
 	width: 341px;
 }
 }
+
+
 /*cambios medida xs*/
 @media screen and (max-width: 480px) {
 #inico_arte{
 	width: 241px;
 }
 }
+
+
+
+

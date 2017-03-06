@@ -7,6 +7,7 @@
     		<meta name="viewport" content="width=device-width, initial-scale=1">
 
     		<!-- Enlaces a hojas de estilo -->
+            <link href="css/scroll_btn.css" rel="stylesheet">
     		<link href="css/main.css" rel="stylesheet">
     		<link href="bootstrap3.3.7/dist/css/bootstrap.css" rel="stylesheet">
     		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -26,8 +27,8 @@
                 </nav> -->
 
             <!-- header con menu, dropdowns y barra de búsqueda -->
-        <nav class="navbar navbar-inverse bg-inverse" id="header_elebegraph">
-        <div class="col-md-offset-1 col-md-10" id="el_menu">
+        <nav class="navbar navbar-inverse bg-inverse navbar-fixed-top" id="header_elebegraph">
+        <div class="" id="el_menu">
             <div class="container-fluid">
                             <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
@@ -41,7 +42,7 @@
                         </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="collapse navbar-collapse col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-10" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="#" class="open_font">¿TIENES SITIO WEB? <span class="sr-only">(current)</span></a></li>
                         <li><a href="#" class="open_font">¿CÓMO QUIERES QUE SE VEA?</a></li>
@@ -72,17 +73,108 @@
 <!-- ////////////////////////////////////////////////////////////////////////////////////////////////// -->
 <!-- //////////////////////////// I N I C I O   P Á G I N A  ////////////////////////////////////////// -->
 <!-- ////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <div id="background_wrapper">
+        <div id="inicio_pleca"></div>
 
         <section id="inicio">
-            <div id="arte_inicio">
-                <img src="images/inicio.png" class="img_centro" id="inico_arte">
+            <div class="col-xs-12">
+                <div id="arte_inicio">
+                    <img src="images/inicio.png" class="img_centro" id="inico_arte">
+                </div>
+                <div id="button_down">
+                        <span class="scroll-btn">
+                            <a href="#">
+                                <span class="mouse">
+                                    <span>
+                                    </span>
+                                </span>
+                                <br>
+                            <p id="scroll">SCROLL</p>
+                            </a>
+
+                        </span>
+                </div>
             </div>
         </section>
-        <section id="bienvenido"></section>
-        <section id="web"></section>
-        <section id="actualiza"></section>
+
+
+
+
+
+        <section id="bienvenido">
+            <div class="col-xs-12">
+                <div class="col-sm-offset-2 col-sm-8" id="cont_secc2">
+                    <div class="col-sm-push-6 col-sm-6">
+                       <h2 id="bien_tit">BIENVENIDO</h2>
+                        <h3 class="verde_secc">Tenemos una solución ágil, rápida & funcional para <span id="potenciar"> POTENCIAR TU MARCA.</span></h3>
+                        <p class="parr_negro">TUS DATOS Y CORREO 365 DÍAS, EN UN SITIO SENCILLO, PRÁCTICO Y FUNCIONAL.</p>
+                        <p class="parrafo_sub">Sin complicaciones,<span class="stroger"> un sitio sencillo </span>que te permita tener la <span class="stroger">información básica</span> de tu empresa,<span class="stroger"> no pierdas clientes</span>, ¿te han preguntado por tu página web?, estás a punto de contar con la tuya.</p>
+                        <h3 id="salida_sec3">7 de cada 10 internautas buscan información de contacto en la página web de la empresa.</h3>
+                        <div class="pleca_azul"></div>
+                    </div>
+                    <div class="col-sm-pull-6 col-sm-6">
+                     <img src="images/arte_seccion2.png" class="al_cien">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section id="web">
+            <div class="col-xs-12">
+                <div class="col-sm-offset-2 col-sm-8" id="cont_secc3">
+                    <div class="col-sm-6">
+                       <h2 id="web_titulo">¿CÓMO QUIERES <br> QUE SE VEA TU WEB?</h2>
+                        <h3 id="texto_azul">PROFESIONALIZA TU IMAGEN EN INTERNET,<br>PARA POTENCIAR TU MARCA.</h3>
+                        <p id="parr_secc3">Los clientes leales tienen un valor de hasta 10 veces más que su primera compra, pues cuando uno de ellos te recomienda, proporciona información al público sobre tus productos ó servicios, una buena recomendación es tu sitio web.</p>
+                         <h2 class="asesoramos">CON GUSTO<br>TE ASESORAMOS,<br>SOMOS CONSULTORES WEB.</h2>
+                        <div class="pleca_azul"></div>
+                        <img src="images/btn_secc3.png">
+                    </div>
+                    <div class="col-sm-6">
+                     <img src="images/empresario_secc3.png" class="al_cien">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <section id="actualiza">
+            <div class="col-xs-12">
+                <div class="col-sm-offset-2 col-sm-8" id="cont_secc4">
+                    <div class="col-sm-push-6 col-sm-6">
+                       <h2 id="gestiona">ACTUALIZA Y GESTIONA<br>TU CONTENIDO WEB</h2>
+                        <p class="purple_parr">MANTÉN <span class="purple_strong"> ACTUALIZADO</span> TU HOME, <span class="purple_strong"> PUBLICA</span> TU PUBLICIDAD, <span class="purple_strong">ACTUALIZA</span> TU CATALOGO, COMPARTE NOTICIAS DE <span class="purple_strong">TU EMPRESA.</span> </p>
+                        <p class="gray_parr">Un sitio para dirigir tu marca. <span class="strong_gray"> FÁCIL</span>, <span class="strong_gray">RÁPIDO</span> y <span class="strong_gray">EN TIEMPO REAL</span>, tenemos el sitio ideal.</p>
+                        <h2 class="asesoramos" id="sec3_gray">CON GUSTO<br>TE ASESORAMOS,<br><span id="consultores"> SOMOS CONSULTORES WEB.</span></h2>
+                        <div class="pleca_azul"></div>
+                        <img src="images/btn_secc3.png">
+                    </div>
+                    <div class="col-sm-pull-6 col-sm-6">
+                     <img src="images/empresario_secc4.png" class="al_cien">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
         <section id="banners"></section>
-        <section id="contacto"></section>
+        <section id="contacto">
+            <div class="col-xs-12">
+                <div class="col-sm-6"></div>
+                <div class="col-sm-6"></div>
+            </div>
+        </section>
+    </div>
 
 <!-- ////////////////////////////////////////////////////////////////////////////////////////////////// -->
 <!-- ////////////////////////////////// F I N   P Á G I N A  ////////////////////////////////////////// -->
