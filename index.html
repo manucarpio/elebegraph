@@ -7,8 +7,12 @@
     		<meta name="viewport" content="width=device-width, initial-scale=1">
 
     		<!-- Enlaces a hojas de estilo -->
+            <link href="css/estilo_btn.css" rel="stylesheet">
             <link href="css/scroll_btn.css" rel="stylesheet">
+            <link href="css/banner.css" rel="stylesheet">
     		<link href="css/main.css" rel="stylesheet">
+            <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/animate.min.css">
+            <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     		<link href="bootstrap3.3.7/dist/css/bootstrap.css" rel="stylesheet">
     		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
@@ -132,7 +136,14 @@
                         <p id="parr_secc3">Los clientes leales tienen un valor de hasta 10 veces más que su primera compra, pues cuando uno de ellos te recomienda, proporciona información al público sobre tus productos ó servicios, una buena recomendación es tu sitio web.</p>
                          <h2 class="asesoramos">CON GUSTO<br>TE ASESORAMOS,<br>SOMOS CONSULTORES WEB.</h2>
                         <div class="pleca_azul"></div>
-                        <img src="images/btn_secc3.png">
+                        <!-- <img src="images/btn_secc3.png"> -->
+                        <div class="back">
+                            <div class="button_base b03_skewed_slide_in">
+                                <div class="btn_text">QUIERO MI PÁGINA WEB</div>
+                                <div></div>
+                                <div class="btn_text">QUIERO MI PÁGINA WEB</div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-sm-6">
                      <img src="images/empresario_secc3.png" class="al_cien">
@@ -167,11 +178,130 @@
 
 
 
-        <section id="banners"></section>
+
+
+
+
+
+        <section id="banners">
+            <div class="container main-container" id="banners_elebe">
+                  
+                  
+                    <div id="carousel-example-generic" class="carousel slide">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                      </ol>
+
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox" id="contenidos_banner">
+
+                        <!-- First slide -->
+                        <div class="item active deepskyblue">
+
+                          <div class="carousel-caption">
+                            <img data-animation="animated bounceInLeft" src="images/item_banner_pro.png">
+                          </div>
+                        </div> <!-- /.item -->
+
+                        <!-- Second slide -->
+                        <div class="item skyblue">
+                          <div class="carousel-caption">
+                            <img data-animation="animated bounceInLeft" src="images/item_banner_emprendedor.png">
+                          </div>
+                        </div><!-- /.item -->
+
+                        <!-- Third slide -->
+                        <div class="item darkerskyblue">
+                          <div class="carousel-caption">
+                            <img data-animation="animated bounceInLeft" src="images/item_banner_emprendedor.png">
+                          </div>
+                        </div><!-- /.item -->
+
+                      </div><!-- /.carousel-inner -->
+
+                      <!-- Controls -->
+<!--                       <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a> -->
+                    </div><!-- /.carousel -->
+
+                </div><!-- /.container -->
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
         <section id="contacto">
             <div class="col-xs-12">
-                <div class="col-sm-6"></div>
-                <div class="col-sm-6"></div>
+            <div class="col-sm-offset-2 col-sm-8">
+                <div class="col-sm-6">
+                    <h2 class="lo">LO<span id="piensas">PIENSAS</span><br><span id="lo_2">LO</span><span id="creas"> CREAS</span></h2>
+                    <h3 class="parr_bl">Que podemos hacer por ti</h3>
+                    <h4 class="open_black"><span><img src="images/ubicacion_icon.png"></span>Centro Comercial Los Paraisos No.202
+                    <br>PENTHOUSE 2, Col. Los Paraisos</h4>
+                    <h4 class="open_black"><span><img src="images/telefono_icon.png"></span>(477) 775 11 28</h4>
+                    <h4 class="open_black"><span><img src="images/mail_icon.png"></span>hola@elebegraph.com
+                    <br>atc@elebegraph.com</h4>
+                </div>
+
+                    <div class="col-sm-6">
+                        <div class="col-sm-12" id="forma_ficha">
+                            <form id="form_one" method="post" action="mail/mailer.php">
+                                  <div class="res_contacto">
+                                    <h3></h3>
+                                    <p></p>
+                                    </div>
+                                    <div class="form-group" id="names">
+                                      <label for="nombre"></label>
+                                      <input type="text" class="form-control validate[required]" id="nombre" name="nombre" placeholder="Nombre">
+                                    </div>
+
+                                    <div class="form-group col-sm-6 col-sm-6" id="tels">
+                                      <label for="telefono"></label>
+                                      <input type="tel" class="form-control validate[required,custom[number]]" id="telefono" name="telefono" placeholder="Teléfono">
+                                    </div>
+
+                                    <div class="form-group col-sm-6 col-sm-6" id="ciudad">
+                                      <label for="ciudad"></label>
+                                      <input type="text" class="form-control validate[required,custom[number]]" id="ciudad" name="ciudad" placeholder="Ciudad">
+                                    </div>
+
+                                    <div class="form-group" id="emails">
+                                      <label for="email"></label>
+                                      <input type="email" class="form-control validate[required,custom[email]]" id="email" name="email" placeholder="Correo electrónico">
+                                    </div>
+
+                                    <div class="form-group" id="empresa">
+                                      <label for="empresa"></label>
+                                      <input type="empresa" class="form-control validate[required,custom[empresa]]" id="empresa" name="empresa" placeholder="Empresa">
+                                    </div>
+
+                                    <div class="form-group" id="msjs">
+                                      <label for="mensaje"></label>
+                                      <textarea type="text" class="form-control validate[required]" rows="3" class="form-control" id="msj" name="msj" placeholder="Mensaje"></textarea>
+                                    </div>
+                                    <a id="enviar_btn" type="submit" href="#id" href="#" class="button"><span>✓</span>Enviar</a>
+                            </form> 
+                        </div>
+                
+                </div>
+            </div>
             </div>
         </section>
     </div>
@@ -201,7 +331,6 @@
 
 
 	<!-- Enlaces a scripts -->
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzWwqvnHWA9TYtp62vbjIQMmv-XsyBnK4"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="js/detectmobilebrowser.js"></script>
 	<script src="js/main.js"></script>
