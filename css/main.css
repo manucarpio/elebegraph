@@ -10,10 +10,23 @@ body{
 .texto_sombra{
 	text-shadow: 0 1px 4px rgba(0,0,0,.9);
 }
+.secciones{
+	display: block;
+	position: relative;
+}
 .al_cien{
 	width: 100%;
 	display: block;
 	position: relative;
+/*	margin-right: auto;
+	margin-left: auto;*/
+}
+.al_cien_bienvenido{
+	width: 100%;
+	display: block;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
 }
 .open_font{
 	font-family: 'Open Sans';
@@ -24,6 +37,23 @@ body{
 	color: black;
 	font-family: 'Open Sans';
 	font-size: 14px;
+}
+#el_menu{
+	background-color: black;
+}
+.fijo_fondo {
+    bottom: -748px;
+    position: absolute;
+    right: -170px;
+    width: 625px;
+    z-index: 1000;
+}
+.fijo_fondo_actualiza {
+    bottom: -781px;
+    position: absolute;
+    right: 0;
+    width: 548px;
+    z-index: 1000;
 }
 #telefono{
 	/*padding-left: 0;*/
@@ -38,9 +68,9 @@ body{
 	background-position: top center;
 	background-repeat: no-repeat;
 	width: 100%;
-	height: 1000px;
+	height: 540px;
 }
-#contenidos_banner {
+#sitios {
     height: 750px;
     overflow: hidden;
     position: relative;
@@ -60,13 +90,13 @@ body{
 #lo_2{
 	font-family: 'Open Sans';
 	font-weight: 300;
-	font-size: 70px;
+	font-size: 60px;
 	color: #5a5a5a;
 }
 #creas{
 	font-family: 'Open Sans';
 	font-weight: 800;
-	font-size: 70px;
+	font-size: 60px;
 	color: white;
 }
 #piensas{
@@ -80,12 +110,68 @@ body{
     font-family: "Open Sans";
     margin-top: -30px;
 }
-#background_wrapper{
+/*#background_wrapper{
 	background-image: url("../images/back_half.jpg");
 	background-repeat: no-repeat;
 	background-position: top center;
 	width: 100%;
 	height: 4767px;
+}*/
+#contenido_inicio{
+	display: block;
+	position: relative;
+	background-image: url("../images/back_secc1.png");
+	background-repeat: no-repeat;
+	background-position: center right;
+	width: 100%;
+	padding: 0px;
+	height: 901px;
+	z-index: 1000;
+}
+#contenido_bienvenido {
+    background-image: url("../images/back_secc2.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    display: block;
+    height: 779px;
+    margin-top: -30px;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    z-index: 900;
+}
+#web {
+    background-image: url("../images/back_secc3.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    display: block;
+    height: 779px;
+    margin-top: -1px;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    z-index: 900;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#actualiza {
+    background-image: url("../images/back_secc4.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    display: block;
+    height: 779px;
+    margin-top: -1px;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    z-index: 900;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#arte_2{
+	display: block;
+	position: relative;
+	width: 100%;
 }
 #arte_inicio{
 	display: block;
@@ -167,7 +253,7 @@ body{
 	margin-top: 120px;
 }
 #cont_secc3 {
-    margin-top: 291px;
+    margin-top: 30px;
 }
 #web_titulo{
 	color: white;
@@ -207,7 +293,7 @@ body{
 	font-weight: 800;
 }
 #gestiona{
-	color: #9921ff;
+	color: #033571;
 	font-family: "Open Sans";
 	font-size: 39px;
 	font-weight: 800;
@@ -220,8 +306,13 @@ body{
 .strong_gray{
 	font-weight: 800;
 }
-
-
+#tels{
+padding-left: 0px;
+}
+#empre{
+	display: block;
+	position: relative;
+}
 
 
 
@@ -236,26 +327,175 @@ body{
 
 
 /*cambios medida lg*/
-@media (max-width: 1200px) {}
+@media (max-width: 1200px) {
+#bien_tit {
+    font-size: 46px;
+}
+#cont_secc2 {
+    margin-top: 60px;
+}
+.fijo_fondo {
+    bottom: -747px;
+    position: absolute;
+    right: -120px;
+    width: 525px;
+    z-index: 1000;
+}
+}
 
 
 /*cambios medida md*/
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+.fijo_fondo {
+    bottom: -747px;
+    position: absolute;
+    right: -120px;
+    width: 525px;
+    z-index: 1000;
+}
+.fijo_fondo_actualiza {
+    bottom: -781px;
+    right: 0px;
+    width: 500px;
+}
+#lo_2 {
+    font-size: 60px;
+}
+#creas {
+    font-size: 60px;
+}
+}
 
 
 
 /*cambios medida sm*/
 @media (max-width: 768px) {
+.fijo_fondo_actualiza {
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    right: 0;
+    width: 300px;
+}
 #inico_arte{
 	width: 341px;
+}
+#bien_tit{
+	font-size: 50px;
+}
+#contenido_inicio {
+    background-position: right bottom;
+    height: 511px;
+}
+.al_cien_bienvenido {
+    margin-top: 9px;
+    width: 45%;
+}
+#salida_sec3 {
+    font-size: 20px;
+}
+.fijo_fondo {
+    bottom: -36px;
+    position: relative;
+    right: 0;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#contacto {
+    height: 1080px;
+}
+#tels {
+    padding-left: 0;
+    padding-right: 0;
+}
+#ciudad {
+    padding-left: 0;
+    padding-right: 0;
 }
 }
 
 
 /*cambios medida xs*/
 @media screen and (max-width: 480px) {
+#ciudad {
+    padding-left: 0;
+    padding-right: 0;
+}
+#tels {
+    padding-left: 0;
+    padding-right: 0;
+}
+#salida_sec3 {
+    font-size: 20px;
+}
+#contenido_inicio {
+    height: 430px;
+}
 #inico_arte{
 	width: 241px;
+}
+#bien_tit{
+	font-size: 39px;
+}
+#cont_secc2 {
+    margin-top: 30px;
+}
+.parr_negro {
+    font-size: 14px;
+}
+.parrafo_sub {
+    font-size: 18px;
+}
+.scroll-btn {
+    margin-top: -10px;
+}
+.al_cien_bienvenido {
+    margin-top: 9px;
+    width: 69%;
+}
+#web_titulo {
+    font-size: 30px;
+}
+#parr_secc3 {
+    font-size: 14px;
+}
+.asesoramos {
+    font-size: 20px;
+}
+.fijo_fondo {
+    bottom: -16px;
+    position: relative;
+    right: 0;
+    width: 85%;
+}
+#cont_secc3 {
+    height: 750px;
+    margin-top: 30px;
+}
+#contacto {
+    height: 1080px;
+}
+#gestiona {
+    font-size: 30px;
+}
+.blanco_mobil{
+	color: white;
+}
+.fijo_fondo_actualiza {
+    bottom: -40px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    right: 0;
+    width: 200px;
+}
+#sec3_gray {
+    color: white;
+}
+#consultores {
+    color: white;
 }
 }
 

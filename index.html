@@ -7,8 +7,9 @@
     		<meta name="viewport" content="width=device-width, initial-scale=1">
 
     		<!-- Enlaces a hojas de estilo -->
-            <link href="css/estilo_btn.css" rel="stylesheet">
+            <link href="css/gelatin_btn.css" rel="stylesheet">
             <link href="css/scroll_btn.css" rel="stylesheet">
+            <link href="css/send_btn.css" rel="stylesheet">
             <link href="css/banner.css" rel="stylesheet">
     		<link href="css/main.css" rel="stylesheet">
             <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/animate.min.css">
@@ -48,17 +49,17 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-10" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#" class="open_font">¿TIENES SITIO WEB? <span class="sr-only">(current)</span></a></li>
-                        <li><a href="#" class="open_font">¿CÓMO QUIERES QUE SE VEA?</a></li>
-                        <li><a href="#" class="open_font">ACTUALIZA Y GESTIONA</a></li>
-                        <li><a href="#" class="open_font">ELEGIR TIPO DE SITIO WEB</a></li>
-                        <li><a href="#" class="open_font">CONTACTO</a></li>
+                        <li class="active"><a href="#bienvenido" class="open_font">¿TIENES SITIO WEB? <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#web" class="open_font">¿CÓMO QUIERES QUE SE VEA?</a></li>
+                        <li><a href="#actualiza" class="open_font">ACTUALIZA Y GESTIONA</a></li>
+                        <li><a href="#sitios" class="open_font">ELEGIR TIPO DE SITIO WEB</a></li>
+                        <li><a href="#contacto" class="open_font">CONTACTO</a></li>
                         
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#"><img src="images/behance_icon.png"></a></li>
-                        <li><a href="#"><img src="images/facebook_icon.png"></a></li>
-                        <li><a href="#"><img src="images/instagram_icon.png"></a></li>
+                        <li><a href="https://www.behance.net/elebegraph" target="_blank"><img src="images/behance_icon.png"></a></li>
+                        <li><a href="https://www.facebook.com/elebegraph/" target="_blank"><img src="images/facebook_icon.png"></a></li>
+                        <li><a href="https://www.instagram.com/elebegraph/" target="_blank"><img src="images/instagram_icon.png"></a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
@@ -80,8 +81,8 @@
     <div id="background_wrapper">
         <div id="inicio_pleca"></div>
 
-        <section id="inicio">
-            <div class="col-xs-12">
+        <section class="secciones" id="inicio">
+            <div class="col-xs-12" id="contenido_inicio">
                 <div id="arte_inicio">
                     <img src="images/inicio.png" class="img_centro" id="inico_arte">
                 </div>
@@ -105,9 +106,9 @@
 
 
 
-        <section id="bienvenido">
-            <div class="col-xs-12">
-                <div class="col-sm-offset-2 col-sm-8" id="cont_secc2">
+        <section class="secciones" id="bienvenido">
+            <div class="col-xs-12" id="contenido_bienvenido">
+                <div class="col-sm-offset-1 col-sm-11 col-lg-offset-2 col-lg-8" id="cont_secc2">
                     <div class="col-sm-push-6 col-sm-6">
                        <h2 id="bien_tit">BIENVENIDO</h2>
                         <h3 class="verde_secc">Tenemos una solución ágil, rápida & funcional para <span id="potenciar"> POTENCIAR TU MARCA.</span></h3>
@@ -117,7 +118,7 @@
                         <div class="pleca_azul"></div>
                     </div>
                     <div class="col-sm-pull-6 col-sm-6">
-                     <img src="images/arte_seccion2.png" class="al_cien">
+                     <img src="images/arte_seccion2.png" class="al_cien_bienvenido">
                     </div>
                 </div>
             </div>
@@ -127,26 +128,19 @@
 
 
 
-        <section id="web">
-            <div class="col-xs-12">
-                <div class="col-sm-offset-2 col-sm-8" id="cont_secc3">
+        <section class="secciones" id="cont_web">
+            <div class="col-xs-12" id="web">
+                <div class="col-sm-offset-1 col-sm-11 col-lg-offset-2 col-lg-8" id="cont_secc3">
                     <div class="col-sm-6">
                        <h2 id="web_titulo">¿CÓMO QUIERES <br> QUE SE VEA TU WEB?</h2>
-                        <h3 id="texto_azul">PROFESIONALIZA TU IMAGEN EN INTERNET,<br>PARA POTENCIAR TU MARCA.</h3>
+                        <h3 id="texto_azul">PROFESIONALIZA TU IMAGEN EN INTERNET, PARA POTENCIAR TU MARCA.</h3>
                         <p id="parr_secc3">Los clientes leales tienen un valor de hasta 10 veces más que su primera compra, pues cuando uno de ellos te recomienda, proporciona información al público sobre tus productos ó servicios, una buena recomendación es tu sitio web.</p>
                          <h2 class="asesoramos">CON GUSTO<br>TE ASESORAMOS,<br>SOMOS CONSULTORES WEB.</h2>
                         <div class="pleca_azul"></div>
-                        <!-- <img src="images/btn_secc3.png"> -->
-                        <div class="back">
-                            <div class="button_base b03_skewed_slide_in">
-                                <div class="btn_text">QUIERO MI PÁGINA WEB</div>
-                                <div></div>
-                                <div class="btn_text">QUIERO MI PÁGINA WEB</div>
-                            </div>
-                        </div>
+                        <a class="btn btn_text" href="#">QUIERO MI PÁGINA WEB</a>
                     </div>
-                    <div class="col-sm-6">
-                     <img src="images/empresario_secc3.png" class="al_cien">
+                    <div class="col-sm-6"  id="empre">
+                     <img src="images/empresario_secc3.png" class="al_cien fijo_fondo">
                     </div>
                 </div>
             </div>
@@ -158,19 +152,19 @@
 
 
 
-        <section id="actualiza">
-            <div class="col-xs-12">
-                <div class="col-sm-offset-2 col-sm-8" id="cont_secc4">
+        <section class="secciones" id="cont_actualiza">
+            <div class="col-xs-12" id="actualiza">
+                <div class="col-sm-offset-1 col-sm-11 col-lg-offset-2 col-lg-8" id="cont_secc4">
                     <div class="col-sm-push-6 col-sm-6">
-                       <h2 id="gestiona">ACTUALIZA Y GESTIONA<br>TU CONTENIDO WEB</h2>
+                       <h2 id="gestiona" class="blanco_mobil">ACTUALIZA Y GESTIONA TU CONTENIDO WEB</h2>
                         <p class="purple_parr">MANTÉN <span class="purple_strong"> ACTUALIZADO</span> TU HOME, <span class="purple_strong"> PUBLICA</span> TU PUBLICIDAD, <span class="purple_strong">ACTUALIZA</span> TU CATALOGO, COMPARTE NOTICIAS DE <span class="purple_strong">TU EMPRESA.</span> </p>
-                        <p class="gray_parr">Un sitio para dirigir tu marca. <span class="strong_gray"> FÁCIL</span>, <span class="strong_gray">RÁPIDO</span> y <span class="strong_gray">EN TIEMPO REAL</span>, tenemos el sitio ideal.</p>
-                        <h2 class="asesoramos" id="sec3_gray">CON GUSTO<br>TE ASESORAMOS,<br><span id="consultores"> SOMOS CONSULTORES WEB.</span></h2>
+                        <p class="gray_parr blanco_mobil">Un sitio para dirigir tu marca. <span class="strong_gray blanco_mobil"> FÁCIL</span>, <span class="strong_gray blanco_mobil">RÁPIDO</span> y <span class="strong_gray blanco_mobil">EN TIEMPO REAL</span>, tenemos el sitio ideal.</p>
+                        <h2 class="asesoramos blanco_mobil" id="sec3_gray">CON GUSTO<br>TE ASESORAMOS,<br><span id="consultores" class="blanco_mobil"> SOMOS CONSULTORES WEB.</span></h2>
                         <div class="pleca_azul"></div>
-                        <img src="images/btn_secc3.png">
+                        <a class="btn btn_text" href="#">QUIERO MI PÁGINA WEB</a>
                     </div>
                     <div class="col-sm-pull-6 col-sm-6">
-                     <img src="images/empresario_secc4.png" class="al_cien">
+                     <img src="images/empresario_secc4.png" class="al_cien fijo_fondo_actualiza">
                     </div>
                 </div>
             </div>
@@ -183,7 +177,7 @@
 
 
 
-        <section id="banners">
+        <section class="secciones" id="banners">
             <div class="container main-container" id="banners_elebe">
                   
                   
@@ -196,7 +190,7 @@
                       </ol>
 
                       <!-- Wrapper for slides -->
-                      <div class="carousel-inner" role="listbox" id="contenidos_banner">
+                      <div class="carousel-inner" role="listbox" id="sitios">
 
                         <!-- First slide -->
                         <div class="item active deepskyblue">
@@ -247,9 +241,9 @@
 
 
 
-        <section id="contacto">
+        <section class="secciones" id="contacto">
             <div class="col-xs-12">
-            <div class="col-sm-offset-2 col-sm-8">
+            <div class="col-sm-offset-1 col-sm-11 col-md-offset-2 col-md-8">
                 <div class="col-sm-6">
                     <h2 class="lo">LO<span id="piensas">PIENSAS</span><br><span id="lo_2">LO</span><span id="creas"> CREAS</span></h2>
                     <h3 class="parr_bl">Que podemos hacer por ti</h3>
@@ -296,7 +290,12 @@
                                       <label for="mensaje"></label>
                                       <textarea type="text" class="form-control validate[required]" rows="3" class="form-control" id="msj" name="msj" placeholder="Mensaje"></textarea>
                                     </div>
-                                    <a id="enviar_btn" type="submit" href="#id" href="#" class="button"><span>✓</span>Enviar</a>
+                                  <!--   <a id="enviar_btn" type="submit" href="#id" href="#" class="button"><span>✓</span>Enviar</a> -->
+                                    <button id="enviar_btn" class="send"> 
+                                      <div class="text">ENVIAR</div>
+                                      <div class="loader"></div>
+                                      <div class="done">ENVIADO</div>
+                                    </button>
                             </form> 
                         </div>
                 
