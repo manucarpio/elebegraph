@@ -33,8 +33,8 @@
 
             <!-- header con menu, dropdowns y barra de búsqueda -->
         <nav class="navbar navbar-inverse bg-inverse navbar-fixed-top" id="header_elebegraph">
-        <div class="" id="el_menu">
-            <div class="container-fluid">
+        <div class="col-md-12" id="el_menu">
+            <div class="container-fluid col-md-offset-1 col-md-11 col-lg-offset-2 col-lg-10">
                             <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -43,24 +43,27 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="#"><img src="images/logotipo.png"></a>
+                            <a class="navbar-brand" href="#"><img src="images/logotipo.png" id="logotipo"></a>
                         </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-10" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#bienvenido" class="open_font">¿TIENES SITIO WEB? <span class="sr-only">(current)</span></a></li>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav" id="menu_content">
+                        <li class="active"><a href="#bienvenido" class="open_font">¿TIENES SITIO WEB?<span class="sr-only">(current)</span></a></li>
                         <li><a href="#web" class="open_font">¿CÓMO QUIERES QUE SE VEA?</a></li>
                         <li><a href="#actualiza" class="open_font">ACTUALIZA Y GESTIONA</a></li>
                         <li><a href="#sitios" class="open_font">ELEGIR TIPO DE SITIO WEB</a></li>
                         <li><a href="#contacto" class="open_font">CONTACTO</a></li>
-                        
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
                         <li><a href="https://www.behance.net/elebegraph" target="_blank"><img src="images/behance_icon.png"></a></li>
                         <li><a href="https://www.facebook.com/elebegraph/" target="_blank"><img src="images/facebook_icon.png"></a></li>
                         <li><a href="https://www.instagram.com/elebegraph/" target="_blank"><img src="images/instagram_icon.png"></a></li>
+                        
                     </ul>
+                    <!-- <ul class="nav navbar-nav navbar-right">
+                        <li><a href="https://www.behance.net/elebegraph" target="_blank"><img src="images/behance_icon.png"></a></li>
+                        <li><a href="https://www.facebook.com/elebegraph/" target="_blank"><img src="images/facebook_icon.png"></a></li>
+                        <li><a href="https://www.instagram.com/elebegraph/" target="_blank"><img src="images/instagram_icon.png"></a></li>
+                    </ul> -->
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
             </div><!-- /.el_menu -->
@@ -246,7 +249,7 @@
             <div class="col-sm-offset-1 col-sm-11 col-md-offset-2 col-md-8">
                 <div class="col-sm-6">
                     <h2 class="lo">LO<span id="piensas">PIENSAS</span><br><span id="lo_2">LO</span><span id="creas"> CREAS</span></h2>
-                    <h3 class="parr_bl">Que podemos hacer por ti</h3>
+                    <h3 class="parr_bl">Que podemos hacer por ti.</h3>
                     <h4 class="open_black"><span><img src="images/ubicacion_icon.png"></span>Centro Comercial Los Paraisos No.202
                     <br>PENTHOUSE 2, Col. Los Paraisos</h4>
                     <h4 class="open_black"><span><img src="images/telefono_icon.png"></span>(477) 775 11 28</h4>
@@ -332,4 +335,6 @@
 	<!-- Enlaces a scripts -->
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="js/detectmobilebrowser.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="js/btn_enviar.js"></script>
 	<script src="js/main.js"></script>

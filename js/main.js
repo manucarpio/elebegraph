@@ -1,54 +1,95 @@
-/* Demo Scripts for Bootstrap Carousel and Animate.css article
-* on SitePoint by Maria Antonietta Perna
-*/
-(function( $ ) {
+$(document).ready(function () {
 
-	//Function to animate slider captions 
-	function doAnimations( elems ) {
-		//Cache the animationend event in a variable
-		var animEndEv = 'webkitAnimationEnd animationend';
-		
-		elems.each(function () {
-			var $this = $(this),
-				$animationType = $this.data('animation');
-			$this.addClass($animationType).one(animEndEv, function () {
-				$this.removeClass($animationType);
-			});
-		});
-	}
-	
-	//Variables on page load 
-	var $myCarousel = $('#carousel-example-generic'),
-		$firstAnimatingElems = $myCarousel.find('.item:first').find("[data-animation ^= 'animated']");
-		
-	//Initialize carousel 
-	$myCarousel.carousel();
-	
-	//Animate captions in first slide on page load 
-	doAnimations($firstAnimatingElems);
-	
-	//Pause carousel  
-	$myCarousel.carousel('pause');
-	
-	
-	//Other slides to be animated on carousel slide event 
-	$myCarousel.on('slide.bs.carousel', function (e) {
-		var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
-		doAnimations($animatingElems);
-	});  
-	
-})(jQuery);
+ $(function(){ 
+     var navMain = $("#bs-example-navbar-collapse-1");
+     navMain.on("click", "a", null, function () {
+         navMain.collapse('hide');
+     });
+ });
 
 
-$(".send").on('click', function(){
-	$(".text").addClass("active");
-	$(".send").addClass("active");
-	$(".loader").addClass("active");
-	$(".send").delay(1700).queue(function(){
-        $(this).addClass("finished").clearQueue();
-    });
-	
-	$(".done").delay(1600).queue(function(){
-        $(this).addClass("active").clearQueue();
-    });
-})
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   
+
+    var frm = $('#form_one');
+
+    // frm.validationEngine();
+
+
+    console.log("testing");
+    console.log(frm);
+
+    // $('#bnt_sumit').click(function(event){
+    //   event.preventDefault();
+    //   console.log("que pasa");
+    // });
+
+        // frm.submit(function (ev)
+        // {
+
+          $('#bnt_sumit').click(function(ev){
+      
+          ev.preventDefault();
+          console.log(this);
+
+          $('#sumit_btn').fadeOut(1000);
+
+          if (frm.validationEngine('validate'))
+          {
+     
+            $.ajax(
+            {
+                  cache: false,
+                  contentType: false,
+                  processData: false,
+                  type: frm.attr('method'),
+                  url: frm.attr('action'),
+                  data: new FormData(frm[0]),
+                  success: function (data) 
+                  { 
+                    console.log(data);
+                    if (data == 1) {
+                     
+
+
+                      $('#id').css(
+                        {
+                          '-moz-transform':'rotateX(90deg',
+                            '-webkit-transform':'rotateX(90deg)',
+                            'transform':'rotateX(90deg)'
+                        });
+                      console.log($(".form-group input"));
+                      $(".form-group").find("input , textarea").val("");
+                      $('.res_contacto h3').text("¡Gracias por contactarnos!");
+                      $('.res_contacto p').text("Pronto recibirás una respuesta.Que tengas un buen día");
+                      $('.res_contacto').fadeIn(1000).delay(2500).fadeOut(500, function(){
+                        $('#sumit_btn').fadeIn(100);
+                      });
+
+                    }
+                    else{
+
+                     
+                       $('#id').css(
+                        {
+                          '-moz-transform':'rotateX(90deg',
+                            '-webkit-transform':'rotateX(90deg)',
+                            'transform':'rotateX(90deg)'
+                        });
+                      $('.back-face').text("Intenta mas tarde");
+                      $('.back-face').css("background-color","red");
+                      $('.back-face').attr("data-icon","x");
+
+                      $('.res_contacto h3').text("¡Lo sentimos ha ocurrido un problema!");
+                      $('.res_contacto p').text("No se ha podido enviar tu correo.<br>Intentalo más tarde. <br />¡Gracias!");
+                      $('.res_contacto').fadeIn(1000).delay(2500).fadeOut(500, function(){
+                        $('#sumit_btn').fadeIn(100);
+                      });
+                    };
+                    
+                  }
+            });
+            }
+          });
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   
+
+});

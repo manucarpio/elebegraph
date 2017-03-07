@@ -18,8 +18,12 @@ body{
 	width: 100%;
 	display: block;
 	position: relative;
-/*	margin-right: auto;
-	margin-left: auto;*/
+}
+
+#menu_content> li > a{
+    padding-bottom: 0;
+    padding-right: 5px;
+    padding-top: 15px;
 }
 .al_cien_bienvenido{
 	width: 100%;
@@ -54,9 +58,6 @@ body{
     right: 0;
     width: 548px;
     z-index: 1000;
-}
-#telefono{
-	/*padding-left: 0;*/
 }
 #ciudad{
 	padding-right: 0;
@@ -110,13 +111,6 @@ body{
     font-family: "Open Sans";
     margin-top: -30px;
 }
-/*#background_wrapper{
-	background-image: url("../images/back_half.jpg");
-	background-repeat: no-repeat;
-	background-position: top center;
-	width: 100%;
-	height: 4767px;
-}*/
 #contenido_inicio{
 	display: block;
 	position: relative;
@@ -180,8 +174,9 @@ body{
 #inicio_pleca{
 	height: 89px;
 }
-#header_elebegraph{
-	height: 91px;
+#header_elebegraph {
+    background-color: black;
+    height: 91px;
 }
 .img_centro{
 	display: block;
@@ -313,8 +308,9 @@ padding-left: 0px;
 	display: block;
 	position: relative;
 }
-
-
+#menu_content{
+	margin-top: 25px;
+}
 
 
 
@@ -341,6 +337,9 @@ padding-left: 0px;
     width: 525px;
     z-index: 1000;
 }
+#menu_content{
+    margin-top: 30px;
+}
 }
 
 
@@ -364,12 +363,18 @@ padding-left: 0px;
 #creas {
     font-size: 60px;
 }
+#menu_content{
+    margin-top: 30px;
+}
 }
 
 
 
 /*cambios medida sm*/
 @media (max-width: 768px) {
+#menu_content{
+    margin-top: 30px;
+}
 .fijo_fondo_actualiza {
     bottom: 0;
     margin-left: auto;
@@ -413,6 +418,9 @@ padding-left: 0px;
 #ciudad {
     padding-left: 0;
     padding-right: 0;
+}
+#logotipo{
+	width: 80px;
 }
 }
 
@@ -496,6 +504,21 @@ padding-left: 0px;
 }
 #consultores {
     color: white;
+}
+.lo {
+    font-size: 40px;
+}
+#lo_2 {
+    font-size: 40px;
+}
+#creas {
+    font-size: 40px;
+}
+#piensas {
+    font-size: 40px;
+}
+.parr_bl {
+    font-size: 17px;
 }
 }
 
