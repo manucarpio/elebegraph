@@ -19,11 +19,16 @@ body{
 	display: block;
 	position: relative;
 }
-
-#menu_content> li > a{
+#menu_content > li > a {
+    font-size: 14px;
     padding-bottom: 0;
     padding-right: 5px;
     padding-top: 15px;
+    text-align: center;
+}
+.icono_cont{
+	display: block;
+	position: relative;
 }
 .al_cien_bienvenido{
 	width: 100%;
