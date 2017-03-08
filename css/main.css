@@ -98,11 +98,15 @@ body {
 #slides_pro {
     padding: 0;
 }
+#slides_quick {
+    padding: 0;
+}
 #banner_emprendedor > .tapete {
     margin-left: 0;
     margin-top: 0;
     position: absolute;
     top: 0;
+    z-index: -1;
 }
 #banner_emprendedor > .img1 {
     margin-left: 15%;
@@ -660,6 +664,9 @@ body {
     margin-right: auto;
     position: relative;
     width: 300px;
+}
+#iphone {
+    width: 170px !important;
 }
 #banner_emprendedor > .img3 {
     margin-left: 140px;

@@ -14,7 +14,7 @@ $msj= $_POST['msj'];
 $asunto ="¡Hola! Gracias por contactarte con nosotros.";
 
 
-// $myemail_1 ='benjamin.gomez@elebegraph.com';
+$myemail_1 ='benjamin.gomez@elebegraph.com';
 $myemail_2 ='manuel.carpio@elebegraph.com';
 // $myemail_3 ='eachavezp@guanajuato.gob.mx';
 // , mporras@inmersa.com.mx, benjamin.gomez@elebegraph.com, lem.montserratporras@gmail.com';//<-----Put Your email address here.
@@ -33,7 +33,7 @@ $myemail_2 ='manuel.carpio@elebegraph.com';
         $mail2->FromName = $_POST['nombre'];
         $mail2->Subject ="¡Hola $mail2->FromName! Gracias por contactarte con nosotros.";
         $mail2->AddAddress($_POST['email']);
-        // $mail2->AddAddress($myemail_1);
+        $mail2->AddAddress($myemail_1);
         $mail2->AddAddress($myemail_2);
         // $mail2->AddAddress($myemail_3);
         
