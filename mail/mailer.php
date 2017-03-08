@@ -5,7 +5,8 @@
     $errors = '';
 
 $nombre = $_POST['nombre']; 
-// $empresa = $_POST['empresa']; 
+$empresa = $_POST['empresa']; 
+$ciudad = $_POST['ciudad']; 
 $email =$_POST['email'];
 $telefono = $_POST['telefono'];
 $msj= $_POST['msj'];
@@ -13,7 +14,7 @@ $msj= $_POST['msj'];
 $asunto ="¡Hola! Gracias por contactarte con nosotros.";
 
 
-$myemail_1 ='benjamin.gomez@elebegraph.com';
+// $myemail_1 ='benjamin.gomez@elebegraph.com';
 $myemail_2 ='manuel.carpio@elebegraph.com';
 // $myemail_3 ='eachavezp@guanajuato.gob.mx';
 // , mporras@inmersa.com.mx, benjamin.gomez@elebegraph.com, lem.montserratporras@gmail.com';//<-----Put Your email address here.
@@ -32,7 +33,7 @@ $myemail_2 ='manuel.carpio@elebegraph.com';
         $mail2->FromName = $_POST['nombre'];
         $mail2->Subject ="¡Hola $mail2->FromName! Gracias por contactarte con nosotros.";
         $mail2->AddAddress($_POST['email']);
-        $mail2->AddAddress($myemail_1);
+        // $mail2->AddAddress($myemail_1);
         $mail2->AddAddress($myemail_2);
         // $mail2->AddAddress($myemail_3);
         
@@ -59,7 +60,7 @@ $myemail_2 ='manuel.carpio@elebegraph.com';
             <table>
                 <tr>
                     <td>
-                    <img src='http://elebegraph.com/images/logo.png' alt='Alejandra' width='100px'>
+                    <img src='http://elebegraph.com/images/logo.png' alt='elebegraph' width='100px'>
                         <h3 style='color:black' >Gracias $nombre por contactarnos</h3>
                         <p style='color:#666' class='lead'>Confirmamos tus datos :</p>
                         <p>
@@ -67,6 +68,7 @@ $myemail_2 ='manuel.carpio@elebegraph.com';
                            <strong style='color:#0069a4; font-ewight:bolder;' >Email:</strong>". $email."<br/>
                          <strong style='color:#0069a4; font-ewight:bolder;' >Teléfono:</strong>". $telefono."<br/>
                             <strong style='color:#0069a4; font-ewight:bolder;' >Empresa:</strong>". $empresa."<br/>
+                             <strong style='color:#0069a4; font-ewight:bolder;' >Ciudad:</strong>". $ciudad."<br/>
                             
                             <strong style='color:#0069a4; font-ewight:bolder;' > Mensaje:</strong>  ".$msj. " <br/>
                             
@@ -87,7 +89,7 @@ $myemail_2 ='manuel.carpio@elebegraph.com';
                                         <tr>
                                             <td>                
                                                                             
-                                                <h5 style='color:#666' class=''>Alejandra Arredondo</h5>                                               
+                                                <h5 style='color:#666' class=''>Elebegraph</h5>                                               
                                                 <p> </strong><br/>
                 Email: <strong><a href='emailto:'>atc@elebegraph.com </a></strong></p>
                 

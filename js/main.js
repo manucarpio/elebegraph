@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+
+// oculta el menu al dar click 
  $(function(){ 
      var navMain = $("#bs-example-navbar-collapse-1");
      navMain.on("click", "a", null, function () {
@@ -26,12 +28,12 @@ $(document).ready(function () {
         // frm.submit(function (ev)
         // {
 
-          $('#bnt_sumit').click(function(ev){
-      
+          $('.send').click(function(ev){
+          
           ev.preventDefault();
           console.log(this);
 
-          $('#sumit_btn').fadeOut(1000);
+          $('.send').fadeOut(1000);
 
           if (frm.validationEngine('validate'))
           {
@@ -57,13 +59,25 @@ $(document).ready(function () {
                             '-webkit-transform':'rotateX(90deg)',
                             'transform':'rotateX(90deg)'
                         });
+                      $(".text").addClass("active");
+                      $(".send").addClass("active");
+                      $(".loader").addClass("active");
+                      $(".send").delay(1700).queue(function(){
+                            $(this).addClass("finished").clearQueue();
+                        });
+                      
+                      $(".done").delay(1600).queue(function(){
+                            $(this).addClass("active").clearQueue();
+                        });
                       console.log($(".form-group input"));
                       $(".form-group").find("input , textarea").val("");
                       $('.res_contacto h3').text("¡Gracias por contactarnos!");
                       $('.res_contacto p').text("Pronto recibirás una respuesta.Que tengas un buen día");
                       $('.res_contacto').fadeIn(1000).delay(2500).fadeOut(500, function(){
-                        $('#sumit_btn').fadeIn(100);
+                        $('.send').fadeIn(100);
                       });
+
+                      
 
                     }
                     else{
@@ -82,7 +96,7 @@ $(document).ready(function () {
                       $('.res_contacto h3').text("¡Lo sentimos ha ocurrido un problema!");
                       $('.res_contacto p').text("No se ha podido enviar tu correo.<br>Intentalo más tarde. <br />¡Gracias!");
                       $('.res_contacto').fadeIn(1000).delay(2500).fadeOut(500, function(){
-                        $('#sumit_btn').fadeIn(100);
+                        $('.send').fadeIn(100);
                       });
                     };
                     
@@ -92,4 +106,71 @@ $(document).ready(function () {
           });
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   
 
+
+  
+    // Activate Carousel
+    $("#carousel_home").carousel();
+     var el_actual=$("#banner_amenidades");
+
+
+           el_actual.find(".tapete").css({"margin-top":"-100px"});
+           el_actual.find(".tapete").animate(
+           {
+            "margin-top":"0px",
+
+           }, 1000,"easeOutBack"
+
+            );
+    
+
+    // Enable Carousel Indicators
+    $(".item1").click(function(){
+        $("#carousel_home").carousel(0);
+    });
+    $(".item2").click(function(){
+        $("#carousel_home").carousel(1);
+    });
+    $(".item3").click(function(){
+        $("#carousel_home").carousel(2);
+    });
+    $(".item4").click(function(){
+        $("#carousel_home").carousel(3);
+    });
+    
+    // Enable Carousel Controls
+    $(".left").click(function(){
+        $("#carousel_home").carousel("prev");
+    });
+    $(".right").click(function(){
+        $("#carousel_home").carousel("next");
+    });
+
+    $("#carousel_home").on('slide.bs.carousel', function (event) {
+
+          console.log("*****prueba JS carousel*****");
+          console.log($(event.relatedTarget));
+
+           var el_actual=$(event.relatedTarget);
+
+
+           el_actual.find(".tapete").css({"margin-top":"-100px"});
+
+
+           el_actual.find(".img1").hide().fadeIn(6000, "easeOutBack");
+           el_actual.find(".img2").hide().fadeIn(6000, "easeOutBack");
+           el_actual.find(".img3").hide().fadeIn(6000, "easeOutBack");
+           el_actual.find(".fondo").hide().fadeIn(2000, "easeOutBack");
+           
+        
+           el_actual.find(".tapete").delay(500).animate(
+           {
+            "margin-top":"0px",
+
+           }, 1000,"easeOutBack"
+
+            );
+           
+    });
+
 });
+// fin document ready

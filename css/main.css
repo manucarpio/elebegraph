@@ -3,22 +3,190 @@
 
 
 body{
-	display: block;
-	position: relative;
-	overflow-x: hidden;
+    display: block;
+    position: relative;
+    overflow-x: hidden;
 }
 .texto_sombra{
-	text-shadow: 0 1px 4px rgba(0,0,0,.9);
+    text-shadow: 0 1px 4px rgba(0,0,0,.9);
 }
 .secciones{
-	display: block;
-	position: relative;
+    display: block;
+    position: relative;
 }
 .al_cien{
-	width: 100%;
-	display: block;
-	position: relative;
+    width: 100%;
+    display: block;
+    position: relative;
 }
+.fondo_tit_emprendedor{
+    font-size: 14px;
+    font-family: 'Open Sans';
+    color: #365000;
+}
+.fondo_tit_pro{
+    font-size: 14px;
+    font-family: 'Open Sans';
+    color: white;
+}
+#pagina_web{
+    font-weight: 800;
+    color: white;
+}
+#lista_emprendedor1 {
+    display: block;
+    position: absolute;
+    margin-top: 235px;
+}
+#lista_emprendedor2 {
+    display: block;
+    position: absolute;
+    margin-top: 235px;
+}
+#lista_pro1 {
+    display: block;
+    position: absolute;
+    margin-top: 235px;
+}
+#lista_pro2 {
+    display: block;
+    position: absolute;
+    margin-top: 235px;
+}
+#lista_emprendedor1 > li  {
+    font-size: 14px;
+    color: #314507;
+    font-family: 'Open Sans';
+    font-weight: 600;
+}
+#lista_emprendedor2 > li  {
+    font-size: 14px;
+    color: #314507;
+    font-family: 'Open Sans';
+    font-weight: 600;
+}
+#lista_pro1 > li  {
+    font-size: 14px;
+    color: white;
+    font-family: 'Open Sans';
+    font-weight: 600;
+}
+#lista_pro2 > li  {
+    font-size: 14px;
+    color: white;
+    font-family: 'Open Sans';
+    font-weight: 600;
+}
+
+
+#carousel_home {
+    height: 600px;
+    padding: 0;
+    width: 100%;
+}
+#slides_banners{
+    padding: 0;
+}
+#banner_emprendedor {
+    height: 700px;
+    padding: 0;
+
+}
+#slides_pro{
+    padding: 0;
+}
+#banner_emprendedor > .tapete {
+    margin-left:0;
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+}
+#banner_emprendedor > .img1 {
+    margin-left: 15%;
+    margin-top: 110px;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+#banner_emprendedor > .img2 {
+    margin-left: -60%;
+    margin-top: 82px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+#banner_emprendedor > .img3 {
+    bottom: 0;
+    margin-bottom: 0;
+    margin-left: 60%;
+    margin-top: 0;
+    position: absolute;
+    z-index: -1;
+}
+#banner_emprendedor > .fondo {
+    margin-left: 0;
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    z-index: -4;
+}
+#banner_pro{
+    height: 700px;
+    padding: 0;
+}
+#banner_pro> .tapete {
+    margin-left: 15%;
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+}
+#banner_pro> .img1 {
+    margin-left: -40%;
+    margin-top: 185px;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+#banner_pro> .img2 {
+    margin-left: -60%;
+    margin-top: 82px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+#banner_pro> .img3 {
+    bottom: 0;
+    margin-bottom: 180px;
+    margin-left: -70%;
+    margin-top: -360px;
+    position: absolute;
+    z-index: -1;
+}
+#banner_pro> .fondo {
+    margin-left: 0;
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    z-index: -4;
+}
+#controles_slide_home {
+    bottom: 20px;
+    left: 370px;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 #menu_content > li > a {
     font-size: 14px;
     padding-bottom: 0;
@@ -27,28 +195,28 @@ body{
     text-align: center;
 }
 .icono_cont{
-	display: block;
-	position: relative;
+    display: block;
+    position: relative;
 }
 .al_cien_bienvenido{
-	width: 100%;
-	display: block;
-	position: relative;
-	margin-right: auto;
-	margin-left: auto;
+    width: 100%;
+    display: block;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
 }
 .open_font{
-	font-family: 'Open Sans';
-	color: white;
-	font-size: 11px;
+    font-family: 'Open Sans';
+    color: white;
+    font-size: 11px;
 }
 .open_black{
-	color: black;
-	font-family: 'Open Sans';
-	font-size: 14px;
+    color: black;
+    font-family: 'Open Sans';
+    font-size: 14px;
 }
 #el_menu{
-	background-color: black;
+    background-color: black;
 }
 .fijo_fondo {
     bottom: -748px;
@@ -65,16 +233,16 @@ body{
     z-index: 1000;
 }
 #ciudad{
-	padding-right: 0;
+    padding-right: 0;
 }
 #contacto{
-	display: block;
-	position: relative;
-	background-image: url("../images/fondo_contacto.jpg");
-	background-position: top center;
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 540px;
+    display: block;
+    position: relative;
+    background-image: url("../images/fondo_contacto.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 540px;
 }
 #sitios {
     height: 750px;
@@ -83,33 +251,33 @@ body{
     width: 100%;
 }
 .lo{
-	font-family: 'Open Sans';
-	font-weight: 300;
-	font-size: 50px;
-	color: black;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 50px;
+    color: black;
 }
 .parr_bl{
-	font-family: 'Open Sans';
-	font-size: 27px;
-	color: white;
+    font-family: 'Open Sans';
+    font-size: 27px;
+    color: white;
 }
 #lo_2{
-	font-family: 'Open Sans';
-	font-weight: 300;
-	font-size: 60px;
-	color: #5a5a5a;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 60px;
+    color: #5a5a5a;
 }
 #creas{
-	font-family: 'Open Sans';
-	font-weight: 800;
-	font-size: 60px;
-	color: white;
+    font-family: 'Open Sans';
+    font-weight: 800;
+    font-size: 60px;
+    color: white;
 }
 #piensas{
-	font-family: 'Open Sans';
-	font-weight: 800;
-	font-size: 50px;
-	color: #e46100;
+    font-family: 'Open Sans';
+    font-weight: 800;
+    font-size: 50px;
+    color: #e46100;
 }
 #scroll {
     color: black;
@@ -117,15 +285,15 @@ body{
     margin-top: -30px;
 }
 #contenido_inicio{
-	display: block;
-	position: relative;
-	background-image: url("../images/back_secc1.png");
-	background-repeat: no-repeat;
-	background-position: center right;
-	width: 100%;
-	padding: 0px;
-	height: 901px;
-	z-index: 1000;
+    display: block;
+    position: relative;
+    background-image: url("../images/back_secc1.png");
+    background-repeat: no-repeat;
+    background-position: center right;
+    width: 100%;
+    padding: 0px;
+    height: 901px;
+    z-index: 1000;
 }
 #contenido_bienvenido {
     background-image: url("../images/back_secc2.png");
@@ -168,26 +336,26 @@ body{
     overflow-y: hidden;
 }
 #arte_2{
-	display: block;
-	position: relative;
-	width: 100%;
+    display: block;
+    position: relative;
+    width: 100%;
 }
 #arte_inicio{
-	display: block;
-	position: relative;
+    display: block;
+    position: relative;
 }
 #inicio_pleca{
-	height: 89px;
+    height: 89px;
 }
 #header_elebegraph {
     background-color: black;
     height: 91px;
 }
 .img_centro{
-	display: block;
-	position: relative;
-	margin-right: auto;
-	margin-left: auto;
+    display: block;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
 }
 #inico_arte {
     margin-top: 90px;
@@ -201,120 +369,120 @@ body{
     margin-top: -40px;
 }
 #texto_footer{
-	color: #fff200;
-	font-family: 'Open Sans';
-	font-size: 14px;
-	text-align: center;
-	margin-top: 100px;
+    color: #fff200;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    text-align: center;
+    margin-top: 100px;
 }
 .verde_secc{
-	color: #295c00;
-	font-family: 'Open Sans';
-	font-size: 24px;
+    color: #295c00;
+    font-family: 'Open Sans';
+    font-size: 24px;
 }
 #bien_tit{
-	color: white;
-	font-family: 'Open Sans';
-	font-size: 87px;
-	font-weight: 800;
-	text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+    color: white;
+    font-family: 'Open Sans';
+    font-size: 87px;
+    font-weight: 800;
+    text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
 }
 #potenciar{
-	font-weight: 800;
+    font-weight: 800;
 }
 .parr_negro{
-	color: black;
-	font-family: "Open Sans";
-	font-weight: 700;
-	font-size: 20px;
+    color: black;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 20px;
 }
 .parrafo_sub{
-	color: #484848;
-	font-family: "Open Sans";
-	font-size: 20px;
+    color: #484848;
+    font-family: "Open Sans";
+    font-size: 20px;
 }
 .stroger{
-	font-weight: 600;
+    font-weight: 600;
 }
 #salida_sec3{
-	color: #295c00;
-	font-family: "Open Sans";
-	font-weight: 700;
-	font-style: italic;
+    color: #295c00;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-style: italic;
 }
 .pleca_azul{
-	width: 100%;
-	display: block;
-	position: relative;
-	height: 5px;
-	background-color: #02feda;
+    width: 100%;
+    display: block;
+    position: relative;
+    height: 5px;
+    background-color: #02feda;
 }
 #cont_secc2{
-	margin-top: 120px;
+    margin-top: 120px;
 }
 #cont_secc3 {
     margin-top: 30px;
 }
 #web_titulo{
-	color: white;
-	font-family: "Open Sans";
-	font-weight: 700;
-	font-size: 40px;
+    color: white;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 40px;
 }
 #texto_azul{
-	color: #033571;
-	font-family: "Open Sans";
-	font-weight: 700;
-	font-size: 19px;
+    color: #033571;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 19px;
 }
 #parr_secc3{
-	color: white;
-	font-family: "Open Sans";
-	font-size: 16px;
+    color: white;
+    font-family: "Open Sans";
+    font-size: 16px;
 }
 .asesoramos{
-	color: white;
-	font-family: "Open Sans";
-	font-weight: 800;
-	font-size: 30px;
+    color: white;
+    font-family: "Open Sans";
+    font-weight: 800;
+    font-size: 30px;
 }
 #sec3_gray{
-	color: #acafb2;
+    color: #acafb2;
 }
 #consultores{
-	color: #74777b;
+    color: #74777b;
 }
 .purple_parr{
-	font-family: "Open Sans";
-	color: #390069;
-	font-size: 20px;
+    font-family: "Open Sans";
+    color: #390069;
+    font-size: 20px;
 }
 .purple_strong{
-	font-weight: 800;
+    font-weight: 800;
 }
 #gestiona{
-	color: #033571;
-	font-family: "Open Sans";
-	font-size: 39px;
-	font-weight: 800;
+    color: #033571;
+    font-family: "Open Sans";
+    font-size: 39px;
+    font-weight: 800;
 }
 .gray_parr{
-	color: #717171;
-	font-family: "Open Sans";
-	font-size: 15px;
+    color: #717171;
+    font-family: "Open Sans";
+    font-size: 15px;
 }
 .strong_gray{
-	font-weight: 800;
+    font-weight: 800;
 }
 #tels{
 padding-left: 0px;
 }
 #empre{
-	display: block;
-	position: relative;
+    display: block;
+    position: relative;
 }
 #menu_content{
-	margin-top: 25px;
+    margin-top: 25px;
 }
 
 
@@ -345,6 +513,13 @@ padding-left: 0px;
 #menu_content{
     margin-top: 30px;
 }
+#banner_emprendedor > .img1 {
+    margin-left: 2%;
+    margin-top: 110px;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
 }
 
 
@@ -371,6 +546,25 @@ padding-left: 0px;
 #menu_content{
     margin-top: 30px;
 }
+
+
+
+
+#banner_emprendedor > .img1 {
+    margin-left: 40px;
+    margin-top: 110px;
+    position: absolute;
+    top: 0;
+    width: 345px;
+    z-index: 2;
+}
+#banner_emprendedor > .tapete {
+    margin-left: -101px;
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    z-index: -3;
+}
 }
 
 
@@ -389,10 +583,10 @@ padding-left: 0px;
     width: 300px;
 }
 #inico_arte{
-	width: 341px;
+    width: 341px;
 }
 #bien_tit{
-	font-size: 50px;
+    font-size: 50px;
 }
 #contenido_inicio {
     background-position: right bottom;
@@ -425,7 +619,19 @@ padding-left: 0px;
     padding-right: 0;
 }
 #logotipo{
-	width: 80px;
+    width: 80px;
+}
+
+
+
+
+
+#banner_emprendedor > .img1 {
+    width: 70%;
+}
+#banner_emprendedor > .img3 {
+    margin-left: 0;
+    width: 580px;
 }
 }
 
@@ -447,10 +653,10 @@ padding-left: 0px;
     height: 430px;
 }
 #inico_arte{
-	width: 241px;
+    width: 241px;
 }
 #bien_tit{
-	font-size: 39px;
+    font-size: 39px;
 }
 #cont_secc2 {
     margin-top: 30px;
@@ -494,7 +700,7 @@ padding-left: 0px;
     font-size: 30px;
 }
 .blanco_mobil{
-	color: white;
+    color: white;
 }
 .fijo_fondo_actualiza {
     bottom: -40px;
@@ -524,6 +730,39 @@ padding-left: 0px;
 }
 .parr_bl {
     font-size: 17px;
+}
+#banner_emprendedor > .img1 {
+    width: 70%;
+}
+#banner_emprendedor > .img3 {
+    margin-left: 20px;
+    width: 580px;
+}
+#texto_emp {
+    width: 560px;
+    margin-left: 0;
+}
+#lista_emprendedor1 {
+    margin-top: 150px;
+}
+#lista_emprendedor2 {
+    margin-top: 150px;
+}
+#lista_pro1 {
+    margin-top: 150px;
+}
+#lista_pro2 {
+    margin-top: 150px;
+}
+.fondo_tit_emprendedor {
+    font-size: 13px;
+}
+#banner_emprendedor {
+    height: 730px;
+    padding: 0;
+}
+#carousel_home {
+    height: 730px;
 }
 }
 
