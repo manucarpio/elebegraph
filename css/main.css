@@ -5,12 +5,14 @@ body {
     position: relative;
 }
 #sitio{
-    z-index: 90;
+    z-index: 999;
+    display: block;
+    position: relative;
 }
-#sitio_btn{
+/*#sitio_btn{
     list-style: none;
     z-index: 99999999;
-}
+}*/
 #wrapper_total {
     display: block;
     overflow-x: hidden;
@@ -134,7 +136,7 @@ body {
     margin-left: 60%;
     margin-top: 0;
     position: absolute;
-    z-index: -1;
+    z-index: 0;
 }
 #banner_emprendedor > .fondo {
     margin-left: 0;
@@ -591,7 +593,7 @@ body {
     margin-left: 49%;
     margin-top: 0;
     position: absolute;
-    z-index: -1;
+    z-index: 0;
 }
 #lista_emprendedor2 {
     display: block;
