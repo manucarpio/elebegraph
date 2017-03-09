@@ -5,6 +5,9 @@ body {
     overflow-x: hidden;
     position: relative;
 }
+#sitio{
+    z-index: 90;
+}
 #wrapper_total {
     display: block;
     overflow-x: hidden;

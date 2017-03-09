@@ -1,6 +1,28 @@
 $(document).ready(function () {
 
 
+
+//scrollReveal
+var fooReveal = {
+  delay    : 400,
+  distance : '90px',
+  easing   : 'ease-in-out',
+  // rotate   : { z: 10 },
+  scale    : 1.1
+
+};
+
+window.sr = ScrollReveal();
+sr.reveal('.foo', fooReveal);
+sr.reveal('#arte_inicio', { delay: 500, scale: 0.9 });
+sr.reveal('#button_down', { delay: 700, scale: 0.9 });
+sr.reveal('#arte_bienvenido', { delay: 800, scale: 0.9 });
+sr.reveal('#empre', { delay: 800, scale: 0.9 });
+sr.reveal('#empre_act', { delay: 800, scale: 0.9 });
+sr.reveal('#texto_cont', { delay: 800, scale: 0.9 });
+
+
+
 // oculta el menu al dar click 
  $(function(){ 
      var navMain = $("#bs-example-navbar-collapse-1");
