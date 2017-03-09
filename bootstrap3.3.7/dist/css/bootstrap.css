@@ -34,6 +34,7 @@ video {
   display: inline-block;
   vertical-align: baseline;
 }
+
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -4272,7 +4273,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-width: 1px 0 0;
 }
 .navbar-brand {
-  float: left;
+  float: none;
   height: 50px;
   padding: 15px 15px;
   font-size: 18px;
@@ -6755,3 +6756,46 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+/*.row-centered {
+    text-align:center;
+}*/
+.row-centered {
+    display: block;
+    margin-left: 11%;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .row-centered {
+    display: block;
+    margin-left: 0%;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+}
+
+@media (max-width: 992px) {
+  .row-centered {
+    display: block;
+    margin-left: 0%;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+}
+@media (max-width: 768px) {}
+@media screen and (max-width: 480px) {}
+
+
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}

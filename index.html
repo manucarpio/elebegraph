@@ -16,6 +16,8 @@
             <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
             <link href="bootstrap3.3.7/dist/css/bootstrap.css" rel="stylesheet">
             <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+            <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+            <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
             <!-- Enlaces a scripts -->
             <script src="js/jquery3.1.1.js"></script>
@@ -34,40 +36,38 @@
 
             <!-- header con menu, dropdowns y barra de búsqueda -->
         <nav class="navbar navbar-inverse bg-inverse navbar-fixed-top" id="header_elebegraph">
-        <div class="col-md-12" id="el_menu">
-            <div class="container-fluid col-md-12">
-                            <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="#"><img src="images/logotipo.png" id="logotipo"></a>
-                        </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav" id="menu_content">
-                        <li class="active"><a href="#bienvenido" class="open_font">¿TIENES SITIO WEB?<span class="sr-only">(current)</span></a></li>
-                        <li><a href="#web" class="open_font">¿CÓMO QUIERES QUE SE VEA?</a></li>
-                        <li><a href="#actualiza" class="open_font">ACTUALIZA Y GESTIONA</a></li>
-                        <li><a href="#sitios" class="open_font">ELEGIR TIPO DE SITIO WEB</a></li>
-                        <li><a href="#contacto" class="open_font">CONTACTO</a></li>
-                        <li><a href="https://www.behance.net/elebegraph" target="_blank"><img src="images/behance_icon.png"></a></li>
-                        <li><a href="https://www.facebook.com/elebegraph/" target="_blank"><img src="images/facebook_icon.png"></a></li>
-                        <li><a href="https://www.instagram.com/elebegraph/" target="_blank"><img src="images/instagram_icon.png"></a></li>
-                        
-                    </ul>
-                    <!-- <ul class="nav navbar-nav navbar-right">
-                        <li><a href="https://www.behance.net/elebegraph" target="_blank"><img src="images/behance_icon.png"></a></li>
-                        <li><a href="https://www.facebook.com/elebegraph/" target="_blank"><img src="images/facebook_icon.png"></a></li>
-                        <li><a href="https://www.instagram.com/elebegraph/" target="_blank"><img src="images/instagram_icon.png"></a></li>
-                    </ul> -->
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-            </div><!-- /.el_menu -->
+        
+            <div class="col-md-12" id="el_menu">
+                <div class="container-fluid col-md-12">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="row row-centered">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#"><img src="images/logotipo.png" id="logotipo"></a>
+                            </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav" id="menu_content">
+                                    <li class="active"><a href="#bienvenido" class="open_font">¿TIENES SITIO WEB?<span class="sr-only">(current)</span></a></li>
+                                    <li><a href="#web" class="open_font">¿CÓMO QUIERES QUE SE VEA?</a></li>
+                                    <li><a href="#actualiza" class="open_font">ACTUALIZA Y GESTIONA</a></li>
+                                    <li><a href="#sitios" class="open_font">ELEGIR TIPO DE SITIO WEB</a></li>
+                                    <li><a href="#contacto" class="open_font">CONTACTO</a></li>
+                                    <li><a href="https://www.behance.net/elebegraph" target="_blank"><img src="images/behance_icon.png"></a></li>
+                                    <li><a href="https://www.facebook.com/elebegraph/" target="_blank"><img src="images/facebook_icon.png"></a></li>
+                                    <li><a href="https://www.instagram.com/elebegraph/" target="_blank"><img src="images/instagram_icon.png"></a></li>
+                                </ul>
+                            </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </div><!-- /.el_menu -->
+            </div>
         </nav>
 
 
@@ -252,7 +252,9 @@
                                 </div>
                         </div>
                         <div class="item col-xs-12 col-sm-12 slides" id="slides_quick">
+                            
                                 <div class="col-xs-12" id="banner_emprendedor">
+                                
                                     <img class="tapete" src="images/detalle_banner_quick.png" alt="banner elebe pro">
                                     <img class="img1" id="iphone" src="images/item_banner_quick.png" alt="banner elebe pro">
                                     <!-- <img class="img2" src="images/banner_amenidades/circ.png" alt="banner elebe pro"> -->
@@ -265,7 +267,7 @@
                                         <li>Desarrollo 100% HTML.</li>
                                         <li>Compatibilidad con:</li>
                                         <li><img src="images/iconos_compatibles_bl.png"></li>
-                                        <li><a class="btn btn_text" href="#" id="sitio">IR AL SITIO</a></li>
+                                        <li id="sitio_btn"><a class="btn btn_text" href="http://www.elebeweb.com/2016/emprendedor/" id="sitio">IR AL SITIO</a></li>
                                         
 
                                     </ul>
@@ -280,7 +282,9 @@
                                     <img id="texto_emp" src="images/texto_banner_quick.png" alt="banner elebe emprendedor">
                                     </div>
                                     <img class="fondo" src="images/fondo_banner_quick.jpg" alt="fondo banner elebe emprendedor">
+
                                 </div>
+                            
                         </div>
                     </div>
             </div>
@@ -304,11 +308,32 @@
                 <div class="col-sm-6 foo" id="texto_cont">
                     <h2 class="lo">LO<span id="piensas">PIENSAS</span><br><span id="lo_2">LO</span><span id="creas"> CREAS</span></h2>
                     <h3 class="parr_bl">Que podemos hacer por ti.</h3>
-                    <h4 class="open_black"><div class="icono_cont"><img src="images/ubicacion_icon.png"></div>Centro Comercial Los Paraisos No.202
-                    <br>PENTHOUSE 2, Col. Los Paraisos</h4>
-                    <h4 class="open_black"><div class="icono_cont"><img src="images/telefono_icon.png"></div>(477) 775 11 28</h4>
-                    <h4 class="open_black"><div class="icono_cont"><img src="images/mail_icon.png"></div>hola@elebegraph.com
-                    <br>atc@elebegraph.com</h4>
+                    <div>
+                        <div class="icono_cont">
+                            <img src="images/ubicacion_icon.png">
+                        </div>
+                        <div class="icono_cont_texto">
+                            <h4 class="open_black">Centro Comercial Los Paraisos No.202
+                            <br>PENTHOUSE 2, Col. Los Paraisos</h4>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="icono_cont">
+                            <img src="images/telefono_icon.png">
+                        </div>
+                        <div class="icono_cont_texto">
+                            <h4 class="open_black">(477) 775 11 28</h4>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="icono_cont">
+                            <img src="images/mail_icon.png">
+                        </div>
+                        <div class="icono_cont_texto">
+                            <h4 class="open_black">hola@elebegraph.com
+                            <br>atc@elebegraph.com</h4>
+                        </div>
+                    </div>
                 </div>
 
                     <div class="col-sm-6 foo">

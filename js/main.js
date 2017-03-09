@@ -1,6 +1,8 @@
 $(document).ready(function () {
 
-
+  
+//inicia pagina top
+$('html, body').animate({ scrollTop: 0 }, 0);
 
 //scrollReveal
 var fooReveal = {
