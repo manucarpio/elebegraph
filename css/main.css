@@ -100,7 +100,7 @@ body {
     font-size: 14px;
     font-weight: 600;
 }
-#carousel_home {
+#sitios_elebe {
     height: 600px;
     padding: 0;
     width: 100%;
@@ -262,12 +262,12 @@ body {
     position: relative;
     width: 100%;
 }
-#sitios {
+/*#sitios {
     height: 750px;
     overflow: hidden;
     position: relative;
     width: 100%;
-}
+}*/
 .lo {
     color: black;
     font-family: "Open Sans";
@@ -340,7 +340,7 @@ body {
 }
 #actualiza {
     background-image: url("../images/back_secc4.png");
-    background-position: left center;
+    background-position: right center;
     background-repeat: no-repeat;
     display: block;
     height: 779px;
@@ -705,7 +705,7 @@ body {
   /*  margin-left: 210px;*/
     width: 560px;
 }
-#carousel_home {
+#sitios_elebe {
     height: auto;
 }
 #lista_emprendedor1 {
@@ -733,6 +733,9 @@ body {
 }
 #actualiza_texto {
     margin-top: 0px;
+}
+#actualiza {
+    background-position: left center;
 }
 }
 
@@ -880,7 +883,7 @@ body {
     height: 730px;
     padding: 0;
 }
-#carousel_home {
+#sitios_elebe {
     height: 730px;
 }
 .fondo_tit_pro {
@@ -901,5 +904,8 @@ body {
 }
 #actualiza_texto {
     margin-top: 0px;
+}
+#actualiza {
+    background-position: left center;
 }
 }
